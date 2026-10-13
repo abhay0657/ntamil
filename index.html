@@ -1,0 +1,274 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stock Learner - Gautam Jhaa</title>
+<meta name="description" content="Stock market educational updates and learning resources.">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #ffd600;
+  --blue1: #05c5f5;
+  --blue2: #0564c8;
+  --white: #f5f5f5;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+  background: #030505;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 35px 14px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #b88b00;
+  background:
+    linear-gradient(rgba(0,0,0,.77), rgba(0,0,0,.93)),
+    url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80")
+    center/cover no-repeat;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 38px 26px 28px;
+  text-align: center;
+  border: 1px solid #695600;
+  border-radius: 29px;
+  background: rgba(22, 22, 22, .92);
+  box-shadow: 0 0 30px rgba(0,0,0,.5);
+  position: relative;
+  z-index: 1;
+}
+
+.profile {
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--yellow);
+  box-shadow: 0 0 23px rgba(255,214,0,.42);
+  margin-bottom: 27px;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  color: var(--yellow);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.headline {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.category {
+  color: #ddd;
+  font-size: 14px;
+  margin-bottom: 29px;
+}
+
+.telegram-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 55px;
+  padding: 15px 12px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 19px;
+  background: linear-gradient(110deg, var(--blue1), var(--blue2));
+  box-shadow: 0 10px 30px rgba(0,174,255,.36);
+  font-size: 14px;
+  font-weight: 800;
+  transition: .2s ease;
+}
+
+.telegram-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(0,174,255,.5);
+}
+
+.features {
+  list-style: none;
+  margin: 24px 0 20px;
+}
+
+.features li {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.risk {
+  font-size: 11px;
+  color: #bcbcbc;
+  margin: 21px 0 19px;
+}
+
+.risk span {
+  color: var(--yellow);
+}
+
+.bottom-line {
+  height: 19px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  background: #292929;
+  margin-bottom: 17px;
+}
+
+/* Meta Ads Manager promotion */
+.promotion {
+  border-top: 1px solid #ffffff16;
+  padding-top: 12px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #777;
+  line-height: 1.8;
+}
+
+.promotion strong {
+  color: #aaa;
+  font-size: 11px;
+}
+
+.promotion a {
+  color: #8bbcff;
+  text-decoration: none;
+}
+
+@media(max-width:380px) {
+  .card {
+    padding: 30px 18px 23px;
+  }
+  h1 {
+    font-size: 21px;
+  }
+  .headline {
+    font-size: 16px;
+  }
+  .profile {
+    width: 112px;
+    height: 112px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+  <main class="card">
+
+    <!-- PROFILE PHOTO -->
+    <img
+      class="profile"
+      id="profilePhoto"
+      src="https://i.ibb.co/cSPbqbrx/images-4.jpg"
+      alt="Trader profile photo"
+    >
+
+    <!-- TRADER NAME -->
+    <h1 id="traderName">Stock Learner - Gautam Jhaa</h1>
+
+    <div class="headline">
+      🔥 DAILY MARKET UPDATES 🔥
+    </div>
+
+    <div class="category">
+      NIFTY · BANKNIFTY · STOCK OPTIONS
+    </div>
+
+    <!-- TELEGRAM BUTTON -->
+    <a
+      class="telegram-btn"
+      id="telegramButton"
+      href="https://t.me/YOUR_TELEGRAM_LINK"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      🚀 Join Free Telegram Channel
+    </a>
+
+    <!-- EDUCATIONAL FEATURES -->
+    <ul class="features">
+      <li>✓ Proper Stop Loss &amp; Targets</li>
+      <li>✓ Daily Market Updates Free</li>
+      <li>✓ F&amp;O Views for Study Purpose Only</li>
+    </ul>
+
+    <p class="risk">
+      <span>⚠</span>
+      Market investments are subject to market risks
+    </p>
+
+    <div class="bottom-line"></div>
+
+    <!-- META ADS PROMOTION AT THE BOTTOM -->
+    <div class="promotion">
+      <strong>Promoted by Meta Ads Manager</strong><br>
+      <span id="promotionUsername">@yourusername</span>
+    </div>
+
+  </main>
+</div>
+
+<script>
+/* ====================================
+   EDIT YOUR SETTINGS HERE
+   ==================================== */
+
+// 1. TELEGRAM LINK
+const TELEGRAM_LINK = "https://t.me/+I9IDYK4meO4xY2E1";
+
+// 2. PROFILE PHOTO URL
+const PROFILE_PHOTO_URL = "https://i.ibb.co/DD5YpPk4/hqdefault.jpg";
+
+// 3. TRADER NAME
+const TRADER_NAME = "Tamil trader Harmonic Raj ";
+
+// 4. META ADS PROMOTION USERNAME
+const PROMOTION_USERNAME = "@PWRads";
+
+
+/* APPLY SETTINGS */
+
+document.getElementById("telegramButton").href = TELEGRAM_LINK;
+
+document.getElementById("profilePhoto").src =
+  PROFILE_PHOTO_URL;
+
+document.getElementById("traderName").textContent =
+  TRADER_NAME;
+
+document.getElementById("promotionUsername").textContent =
+  PROMOTION_USERNAME;
+</script>
+
+</body>
+</html>
+```
